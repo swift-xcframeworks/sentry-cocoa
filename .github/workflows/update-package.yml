@@ -33,6 +33,7 @@ jobs:
         run: |
           curl -sLJO https://github.com/getsentry/sentry-cocoa/releases/download/${{ steps.latest_release.outputs.VERSION }}/Sentry.xcframework.zip
           unzip Sentry.xcframework.zip -d extracted
+          rm Sentry.xcframework.zip
           mv extracted/Carthage/Build/Sentry.xcframework ./
           rm -rf extracted
           zip --symlinks -r Sentry.xcframework.zip Sentry.xcframework
