@@ -34,10 +34,8 @@ jobs:
           curl -sLJO https://github.com/getsentry/sentry-cocoa/releases/download/${{ steps.latest_release.outputs.VERSION }}/Sentry.xcframework.zip
           unzip Sentry.xcframework.zip -d extracted
           rm Sentry.xcframework.zip
-          echo "ls -l"
           mv extracted/Carthage/Build/Sentry.xcframework ./
           rm -rf extracted
-          echo "ls -l"
           zip --symlinks -r Sentry.xcframework.zip Sentry.xcframework
 
           SHA256_HASH=$(shasum -a 256 Sentry.xcframework.zip | cut -f 1 -d ' ')
