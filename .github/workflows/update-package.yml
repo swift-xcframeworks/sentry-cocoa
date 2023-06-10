@@ -1,4 +1,4 @@
-name: Process latest realm-swift release
+name: Process latest sentry-cocoa release
 
 on:
   workflow_dispatch:
@@ -69,8 +69,7 @@ jobs:
 
       - name: Upload Release Assets
         run: |
-          cd Frameworks
-          for file in *.zip
+          for file in Sentry.xcframework.zip
           do
             curl \
               -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
