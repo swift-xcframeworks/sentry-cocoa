@@ -15,7 +15,7 @@ let package = Package(
     dependencies: [ ],
     targets: [
         .binaryTarget(name: "Sentry",
-                      url: "https://github.com/swift-xcframeworks/senry-cocoa/releases/download/\(sentryVersion)/Sentry.xcframework.zip",
+                      url: "https://github.com/swift-xcframeworks/sentry-cocoa/releases/download/\(sentryVersion)/Sentry.xcframework.zip",
                       checksum: sentryChecksum)
     ]
 )
