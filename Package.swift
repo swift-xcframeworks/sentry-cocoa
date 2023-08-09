@@ -7,7 +7,7 @@ let sentryChecksum = "215b7b37b3085c9522da8ededce74cb81162b542d35e4aefea634cbda6
 
 
 let package = Package(
-    name: "realm-swift",
+    name: "sentry-cocoa",
     platforms: [.iOS(.v11), .macOS(.v10_13), .tvOS(.v11), .watchOS(.v4)],
     products: [
          .library(name: "Sentry", targets: ["Sentry"])
