@@ -3,7 +3,7 @@
 import PackageDescription
 
 let sentryVersion = "8.9.4" // Updated by workflow action
-let sentryChecksum = "d1c78be4456b3bae47af9f28e8309880623741fbec3f9da3085647692cfbd426" // Updated by workflow action
+let sentryChecksum = "c81c2063619597c409e07289d6b96cb161a894c475014880a8f664aa63bcbd4a" // Updated by workflow action
 
 
 let package = Package(
