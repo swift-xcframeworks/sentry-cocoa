@@ -2,8 +2,8 @@
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 import PackageDescription
 
-let sentryVersion = "8.14.1" // Updated by workflow action
-let sentryChecksum = "00bb6dd7c8974e7afe12fdc6bed758ee5439c697c6584a97a8a0e5808076e10f" // Updated by workflow action
+let sentryVersion = "8.14.2" // Updated by workflow action
+let sentryChecksum = "db4fa087fc1cbce88a3d64da72595b6a386c843e178169a04dc8249cabf27d70" // Updated by workflow action
 
 
 let package = Package(
